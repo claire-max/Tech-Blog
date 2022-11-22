@@ -23,6 +23,7 @@ router.post('/login', async (req, res) => {
 		});
 
     if (!userData) {
+console.log('userdata')
       res
         .status(400)
         .json({ message: 'Username and password are incorrect' });
@@ -32,6 +33,7 @@ router.post('/login', async (req, res) => {
     const validPassword = await userData.checkPassword(req.body.password);
 
     if (!validPassword) {
+      console.log("valid password")
       res
         .status(400)
         .json({ message: 'Username and password are incorrect' });
@@ -46,6 +48,7 @@ router.post('/login', async (req, res) => {
     });
 
   } catch (err) {
+    console.log(err)
     res.status(400).json(err);
   }
 });
