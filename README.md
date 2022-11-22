@@ -36,7 +36,7 @@
   [Walk Through](https://drive.google.com/file/d/1bJRx12cYCGNSYgjBSmi1noAF8zvb2zm2/view)
 
   ## Deployed Link
-
+   https://tech-blog454566.herokuapp.com/
 
   ## Usage
   The Tech Blog website is available through Heroku.
